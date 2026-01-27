@@ -1,0 +1,8 @@
+services:
+  sit3-api:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      SIT3_URL: ${SIT3_URL}
+      SIT3_HEADERS_JSON: ${SIT3_HEADERS_JSON:-}
